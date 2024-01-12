@@ -13,5 +13,8 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": [
+    "TURBO_INVOCATION_DIR"
+  ]
 }

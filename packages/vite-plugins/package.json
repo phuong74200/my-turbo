@@ -1,0 +1,21 @@
+{
+  "name": "@repo/vite-plugins",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "eslint": "^8.56.0",
+    "get-tsconfig": "^4.7.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}

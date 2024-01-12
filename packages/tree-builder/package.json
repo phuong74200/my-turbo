@@ -1,0 +1,23 @@
+{
+  "name": "@repo/tree-builder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@types/react": "^18.2.43",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-router-dom": "^6.21.2",
+    "uid": "^2.0.2"
+  }
+}

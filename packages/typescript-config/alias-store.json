@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Aliases extends",
+  "compilerOptions": {
+    "paths": {
+      "@alias/*": ["../../packages/alias/src/*"],
+      "@tree-builder/*": ["../../packages/tree-builder/src/*"]
+    }
+  }
+}
